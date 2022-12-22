@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menu-mobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        }
+    </script>
     <title>MediCenter</title>
 </head>
 
@@ -17,8 +28,12 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menu-mobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                    </div>
                     <ul>
-
                         <li class="active"><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
@@ -165,13 +180,32 @@
                 </div>
             </section>
             <aside>
-                <div class="widget">
+                <div class="widget flex">
                     <div class="widget-title">
                         <div class="widget-title-text">Departamentos</div>
                         <div class="widget-title-bar"></div>
                     </div>
                     <div class="widget-body">
-                        ---
+                        <div class="container2">
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                            <div class="departaments-box">
+                                ...
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="widget">
@@ -180,12 +214,83 @@
                         <div class="widget-title-bar"></div>
                     </div>
                     <div class="widget-body">
-                        ---
+                        <div class="make-des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                            aliquam temporibus sint nemo quaerat enim? </div>
+                        <div class="widget-bar"></div>
+                        <div class="widget-contact">by phone: <p>1-800-843-4305</p>
+                        </div>
+                        <div class="widget-bar"></div>
+                        <div class="widget-contact">by phone: <p>1-800-843-4305</p>
+                        </div>
+                        <div class="widget-bar"></div>
+                        <div class="widget-contact">by phone: <p>1-800-843-4305</p>
+                        </div>
+                        <div class="widget-bar"></div>
+
                     </div>
                 </div>
             </aside>
         </div>
     </section>
+
+    <footer>
+        <div class="container flex-column">
+            <div class="footer-menu">
+                <div class="fm-1">
+                    <a href="">---</a>
+                </div>
+                <div class="fm-2">
+                    <a href="">---</a>
+                </div>
+                <div class="fm-3">
+                    <a href="">---</a>
+                </div>
+            </div>
+
+            <div class="footer-area">
+                <div class="footer-areaitem">
+                    <div class="widget flex">
+                        <div class="widget-title">
+                            <div class="widget-title-text">MediCenter Clínica</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">
+                            <div class="footer-contact">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos tenetur
+                                <div class="footer-item-1">
+                                <div class="footer-item-2">Medicenter Clínica 45 Av. Brasil Maringá - PR 87083-290, Brazil</div>
+                                <div class="footer-item-3">+55 (44)99999-9999 +55 (44)99999-9999 <b>alissonrcosta94@gmail.com</b></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-areaitem">
+                    <div class="widget flex">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Latest Pots</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-areaitem">
+                    <div class="widget flex">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Latest Tweets</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="widget-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copy">
+                Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
 
 </body>
 
